@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  color: #333;
+  background: #F5F5F5;
+  min-width: 1226px;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url('../font/iconfont.woff2?t=1637642842000') format('woff2'),
+       url('../font/iconfont.woff?t=1637642842000') format('woff'),
+       url('../font/iconfont.ttf?t=1637642842000') format('truetype');
+}
+
+i {
+  font-style: normal;
+  font-family: "iconfont";
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; 
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.container {
+  width: 1226px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background: red; */
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* 所有标题 */
+.container .t3 {
+  font-size: 21px;
+  color: #333333;
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+}
+
+/* 所有rightbox */
+.container .rightbox {
+  position: absolute;
+  right: 0;
+  bottom: 13px;
+  /* background: darkmagenta; */
+  color: #424242;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container .rightbox:hover {
+  color: #FF6700;
+}
+
+/* 所有tab */
+.container .title .tab {
+  width: 126px;
+  height: 24px;
+  /* background: mediumvioletred; */
+  font-size: 16px;
+  color: #424242;
+}
+
+.container .title .tab span {
+  float: right;
+  margin-left: 18px;
+  /* transition: all .3s; */
+}
+
+.container .title .tab span:nth-child(2) {
+  margin-left: 0;
+}
+
+.container .title .tab span:hover {
+  cursor: pointer;
+  color: #FF6700;
+  border-bottom: 2px solid #FF6700;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+/* 商品展示部分 */
+.show .list li {
+  background: #FAFAFA;
+  text-align: center;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.show .list li img {
+  margin: 0 auto 18px;
+}
+
+.show .list li h3 {
+  height: 23px;
+  font-size: 13px;
+  color: #202020;
+  width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+}
+
+.show .list li p {
+  height: 31px;
+  font-size: 11px;
+  color: #ADADAD;
+}
+
+.show .list li h4 {
+  color: #FA6509;
+  font-size: 12px;
+}
+
+.show .list li del {
+  color: #ADADAD;
+}
+
+img {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
